@@ -102,11 +102,14 @@ img {
     position: relative;
     display: block;
 
-    transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .header-link:focus, .header-link:hover {
+    color: #404bbf;
+}
+
+.header-studio {
     color: #404bbf;
 }
 
@@ -119,7 +122,7 @@ img {
         background: var(--OCEAN, #404BBF);
         display: block;
         margin-top: 20px;
-        
+        bottom: -1px;
         
 }
 
@@ -128,7 +131,7 @@ img {
     align-items: center;
 padding: 0 15px;
 max-height: 72px ;
-
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -159,8 +162,7 @@ max-height: 72px ;
         line-height: 1.5;
         letter-spacing: 0.02em;
         
-        transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -188,6 +190,7 @@ padding: 188px 0;
     background-position: center;
     max-width: 1440px; 
     margin: 0 auto;
+    background-size: cover;
 }
 
 .caption-container {
@@ -224,8 +227,7 @@ padding: 16px 32px;
 min-width: 169px;
 height: 56px;
 
-transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .caption-button:hover, .caption-button:focus {
@@ -275,6 +277,7 @@ letter-spacing: 0.02em;
         border-radius: 4px;
             border: 1px solid var(--LIGHT-SLATE, #8E8F99);
             background: var(--CLOUD, #F4F4FD);
+            margin-bottom: 8px;
 }
 
 /*  */
@@ -294,20 +297,22 @@ letter-spacing: 0.02em;
      letter-spacing: 0.02em;
      text-transform: capitalize;
     margin-bottom: 72px;
-     
+    
 }
 .team-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    
+   
 }
 .team-item {
     background-color: #FFFFFF;
 width: calc((100% - 72px) / 4);
     text-align: center;
     border-radius: 0px 0px 4px 4px;
-    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
 .team-img {
@@ -315,6 +320,7 @@ width: calc((100% - 72px) / 4);
     display: block;
      max-width: 100%;
       height: auto;
+    
 }
 .team-heading {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -366,8 +372,7 @@ text-align: center;
             justify-content: center;
         border-radius: 50%;
         
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:focus, .team-soc-link:hover {
@@ -429,7 +434,6 @@ overflow: hidden;
 
 .portfolio-cover-text {
     
-   
     color: var(--CLOUD, #F4F4FD);
         
         font-size: 16px;
@@ -438,7 +442,7 @@ overflow: hidden;
         line-height: 1.5;
     
         letter-spacing: 0.02em;
-        
+        transform: translateY(0%);
        
 }
 .portfolio-text-cover {
@@ -452,8 +456,7 @@ position: absolute;
     background: var(--IRIS, #4D5AE5);
     transform: translateY(100%);
 
-    transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-conteiner {
     padding: 32px 16px;
@@ -464,6 +467,7 @@ position: absolute;
 
 .portfolio-item:hover .portfolio-text-cover {
     transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-heading {
@@ -534,17 +538,18 @@ max-width: 264px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        margin-bottom: 16px;
 }
 
 
 .footer-link {
-
+align-items: baseline;
 }
 
 .media-list {
     display: flex;
     gap: 16px;
-    margin-top: 16px;
+    
    
 }
 
@@ -564,8 +569,7 @@ align-items: center;
     justify-content: center;
         border-radius: 50%;
 
-        transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
